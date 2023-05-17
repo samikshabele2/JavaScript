@@ -19,7 +19,7 @@ var greaterNumber = function(value1, value2){
  }
  greaterNumber(899, 800);
 
-console.log("-----------------------------------------------------------------------")
+console.log("                                                                           ")
  console.log("2.check-- 29, 44, 0, 101--even or odd number")
  
  var isEvenOrOddNum = function(num1){
@@ -50,7 +50,7 @@ console.log("-------------------------------------------------------------------
  }
  isEvenOrOddNum(101);
 
- console.log("---------------------------------------------------");
+ console.log("                                                                           ");
  console.log("3. which word has even or odd length JavaScript, devel0per, google ");
 
 function wordLength(str){
@@ -67,7 +67,7 @@ function wordLength1(str){
     var text = str;
     var textLength = text.length;
     console.log(`the length is:`, textLength);
-    var result = str%2 ? "Developer Has ODD" : "Developer Has EVEN";
+    var result = str%2 ? "Developer Has EVEN" : "Developer Has ODD";
     console.log(`${result}`);
 
 }
