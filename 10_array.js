@@ -85,3 +85,51 @@ console.log(arrayOfRollNumbers);
 var arrayOfRollNumbers = [67, 56, 78, 99, 80];
 console.log(arrayOfRollNumbers);
 arrayOfRollNumbers.splice(2, 2, 111, 22, 333);
+
+console.log('=== Traversing array ===');
+
+var arrayNames = ["Anil", "Siya", "Ram", "Sunil", "Jenny"];
+for (let index = 0; index < arrayNames.length; index++) {
+    const element = arrayNames[index];
+    console.log(element);
+}
+
+
+//this is show the index
+console.log('------ for in loop--------');
+for (const index in arrayNames) {
+    console.log(arrayNames[index]);
+}
+
+
+//this show the element
+console.log('---------for the loop---------');
+for (const element of arrayNames) {
+    console.log(element);
+}
+
+
+
+console.log('----------WAP to get even indexedelement -------');
+var arrayNames = ["Anil", "Siya", "Ram", "Sunil", "Jenny"];
+//WAP to get even indexed element
+for (const index in arrayNames) {
+    if (index%2==0) {
+    console.log('${arrayNames[index]}');
+}
+}
+
+
+console.log('----- join() ------');
+let names = arrayNames.join(", ");
+console.log(names);
+
+console.log('------ Concate the array ------');
+const arrayBoys = ["Anil", "Ram", "Sunil"];
+let arrayGirls = ["Siya", "Ram"]
+
+let combineArray = arrayBoys + arrayGirls;
+console.log(combineArray);
+
+let concatArray = arrayBoys.concat(arrayBoys);
+console.log(concatArray);
